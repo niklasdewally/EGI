@@ -5,7 +5,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import dgl
-from dgl import DGLGraph
+from dgl import DGLGraphStale as DGLGraph
 from dgl.data import register_data_args, load_data
 import scipy.sparse as sp
 from scipy.linalg import eigh, norm
