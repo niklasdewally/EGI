@@ -8,7 +8,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import dgl
-from dgl import DGLGraph
+from dgl import DGLGraphStale as DGLGraph
 from dgl.data import register_data_args, load_data
 from models.dgi import DGI, MultiClassifier
 from models.subgi import SubGI
@@ -232,7 +232,7 @@ def main(args):
         best = 1e9
         best_t = 0
         dur = []
-        g.ndata['features'] = features
+        g.ndata['features'] = features.to(torch.device('cpu'))
         for epoch in range(args.n_dgi_epochs):
             train_sampler = dgl.contrib.sampling.NeighborSampler(g, 256, 5,  # 0,
                                                                     neighbor_type='in', num_workers=1,
