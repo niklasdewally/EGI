@@ -1,3 +1,16 @@
+This is a fork of EGI, updated to version 0.5.3. This provides compatibility with CUDA 11 and NVIDIA 30 series cards.
+
+**This fork is not fully tested, and should be considered work in progress**
+
+
+## Requirements
+
+```
+pip install tqdm dgl-cu110==0.5.3
+```
+
+* * * 
+
 # EGI
 Source code for ["Transfer Learning of Graph Neural Networks with Ego-graph Information Maximization"](https://proceedings.neurips.cc/paper/2021/file/0dd6049f5fa537d41753be6d37859430-Paper.pdf), published in NeurIPS 2021.
 
