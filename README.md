@@ -1,4 +1,4 @@
-This is a fork of EGI, with an updated DGI version of 0.5.3. This provides compatibility with CUDA 11 and NVIDIA 30 series cards.
+This is a fork of EGI, with an updated dgl version of 0.5.3. This provides compatibility with CUDA 11 and NVIDIA 30 series cards.
 
 **This fork is not fully tested, and should be considered work in progress**
 
