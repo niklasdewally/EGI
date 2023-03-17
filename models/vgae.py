@@ -8,9 +8,9 @@ import dgl.function as fn
 import torch.nn.functional as F
 import networkx as nx
 
-from src.models.MLP import MLP
-from src.models.inner_product_decoder import InnerProductDecoder
-from src.utils import loss_function
+from models.MLP import MLP
+from models.inner_product_decoder import InnerProductDecoder
+from models.utils import loss_function
 import numpy as np
 from sklearn.metrics import roc_auc_score, average_precision_score, label_ranking_average_precision_score
 import scipy.sparse as sp
